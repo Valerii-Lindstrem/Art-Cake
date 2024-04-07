@@ -777,7 +777,7 @@ h4 {
 
 .background__image {
   position: absolute;
-  background-image: url("/img/background.jpg");
+  background-image: url("/Art-Cake/img/background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   aspect-ratio: 1/1;

@@ -1,0 +1,120 @@
+@import "../variables";
+@import "../mixins";
+@import "../media";
+
+.section__about{
+    -webkit-transition: var(--transition-opacity);
+    -o-transition: var(--transition-opacity);
+    transition: var(--transition-opacity);
+    z-index: 2;
+    opacity: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    row-gap: 20px;
+    position: absolute;
+    height: 100%;
+    margin-top: 0;
+    @media screen and (max-width:650px) {
+        flex-flow: column-reverse;
+    }
+
+    &.non-active{
+        z-index: 1;
+        opacity: 0 !important;
+        visibility: hidden;
+    }
+
+    &-social{
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: end;
+        padding-bottom: 10px;
+
+        @media screen and (max-width:650px) {
+                height: auto;
+        }
+
+        &__list{
+            display: flex;
+            flex-flow: column;
+            gap: 15px;
+            
+            @media screen and (max-width:650px) {
+                flex-flow: row;
+            }
+        }
+
+        &__item{
+            width: 30px;
+            aspect-ratio: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            i{
+                font-size: 18px;
+                @media screen and (max-width:450px) {
+                    font-size: 16px;
+                    
+                }
+            }
+        }
+    }
+
+    &-body{
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        align-items: center;
+
+        &__img{
+            width: 400px;
+            height: auto;
+            padding: 20px;
+
+            @media screen and (max-width:590px) {
+                width: 350px;
+            }
+
+            @media screen and (max-width:450px) {
+                width: 300px;
+                
+            }
+
+            
+            
+        }
+
+        @media screen and (max-width:450px) {
+            width: 360px;
+            
+        }
+
+        @media screen and (max-width:650px) {
+            margin: -10px;
+            
+        }
+        @include mobile-l{
+            width: 320px;
+            margin: -10px;
+        } 
+
+        &__description{
+            padding: 20px;
+            text-align: center;
+            p{
+                @include fluid-text(20,15); 
+                max-width: 60ch;
+                .special{
+                    @include fluid-text(23,17);
+                    color: black; 
+                }
+            }
+        }
+    }
+}

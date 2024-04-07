@@ -1,0 +1,44 @@
+@import "../variables";
+@import "../mixins";
+
+.menu{
+    position: fixed;
+    padding: 30px;
+    height: 100%;
+    width: fit-content;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: var(--transition-opacity);
+    -o-transition: var(--transition-opacity);
+    transition: var(--transition-opacity);
+
+    &.active{
+        z-index: 2;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &-list{
+        height: 50%;
+        width: 200px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: start;
+    }
+
+    .menu-list__top{
+        border-bottom: 1px solid var(--color-text);
+        .menu-link{
+            @include fluid-text(30,25);
+        } 
+    }
+    .menu-list__bottom{
+        border-bottom: 1px solid var(--color-text);
+        .menu-link{
+            @include fluid-text(20,16);
+        } 
+    }
+    
+}

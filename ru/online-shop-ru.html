@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valerii Lindstrem: Online Shop</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css"
+            crossorigin>
+</head>
+<body>
+    <div class="preload">
+        <p>Valerii Lindstrem <br>art cake</p>
+    </div>
+
+    <header class="header" id="header">
+        <nav class="header__container">
+            <ul class="header__container-list">
+                <li class="header__container-item">
+                    <a href="/ru/index-ru.html" class="header__container-link header__container-link__title">
+                        Valerii Lindstrem
+                    </a>
+                </li>
+                <li class="header__container-item">
+                    <a href="/ru/online-shop-ru.html" class="header__container-link">
+                        RU
+                    </a>
+                    <a href="/en/online-shop-en.html" class="header__container-link">
+                        EN
+                    </a>
+                </li>
+                <li class="header__container-link">
+                    <button type="button" class="header__container-button"
+                    id="toogle-btn">
+                        <div class="button-arrow"></div>
+                        <div class="button-arrow"></div>
+                        <div class="button-arrow"></div>
+                        <span class="visually-hidden">Open/Close navigation menu
+                        </span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav class="menu" id="menu">
+        <ul class="menu-list menu-list__top">
+            <li class="menu-item">
+                <a href="/ru/index-ru.html" class="menu-link">Главная</a>
+            </li>
+            <li class="menu-item">
+                <a href="/ru/about-ru.html" class="menu-link">Обо мне</a>
+            </li>
+            <li class="menu-item">
+                <a href="/ru/services-ru.html" class="menu-link">Услуги</a>
+            </li>
+        </ul>
+        <ul class="menu-list menu-list__bottom">
+            <li class="menu-item menu-item__title">
+                <h4>Контакты:</h4>
+            </li>
+            <li class="menu-item">
+                <a href="https://www.instagram.com/valerii_lindstrem?igsh=MWk2Ync2azVrd255aw==" class="menu-link" target="_blank"><i
+                    class="ri-instagram-line"></i>
+                Instagram</a>
+            </li>
+            <li class="menu-item">
+                <a href="https://t.me/valerii_lindstrem" class="menu-link" target="_blank"><i
+                class="ri-telegram-line"></i>
+                Telegram</a>
+            </li>
+            <li class="menu-item">
+                <a href="https://wa.me/79256626074"     class="menu-link"
+                target="_blank"><i
+                class="ri-whatsapp-line"></i>
+                WhatsApp
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="mailto:lindstremvr@gmail.com" class="menu-link"><i
+                class="ri-mail-line"></i> Email
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="section__shop container">
+            <h1 class="section__shop-heading">Online Shop</h1>
+            <div class="section__shop-btn">
+                <span class="section__shop-btn-all active" data-lists="section__shop-body__sweets,section__shop-body__non-sweets,section__shop-body__cakes">Всё</span>
+                <span class="section__shop-btn-sweets" data-lists="section__shop-body__sweets">Сладкое</span>
+                <span class="section__shop-btn-quiches" data-lists="section__shop-body__non-sweets">Несладкое</span>
+                <span class="section__shop-btn-cakes" data-lists="section__shop-body__cakes">Торты</span>
+            </div>
+            <div class="section__shop-body">
+                <!-- Sweets -->
+                <div class="section__shop-body__container section__shop-body__sweets active">
+                    <div class="section__shop-body__card">
+                        <div class="section__shop-body__card-img">
+                            <img src="/img/sweets/cheesecakeGrapes.jpg" alt="No-bake cheesecake with grapes" class="section__shop-body__card-image">
+                        
+                        </div>
+                        
+                        <div class="section__shop-body__card-description">
+                            <p>
+                                Сливки пастеризованные, сыр рикотта, сметана, мука пшеничная, ягоды винограда, сахар, рислинг, ваниль стручковая, цветы фиалки, желатин. 
+                            </p>
+                        </div>
+                        <div class="section__shop-body__card-info">
+                            <h3 class="section__shop-body__card-heading">Чизкейк без выпечки с виноградом.</h3>
+                            <div class="section__shop-body__card-order">
+                                <p class="price">3500 руб.</p>
+                                <div class="order__social">
+                                    <span>Заказать: </span>
+                                    <a href="https://t.me/valerii_lindstrem"
+                                    target="_blank"><i class="ri-telegram-line"></i></a>
+                                    <a href="https://wa.me/79256626074"
+                                    target="_blank"><i class="ri-whatsapp-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__shop-body__card">
+                        <div class="section__shop-body__card-img">
+                            <img src="/img/sweets/chocolateTart.jpg" alt="Very chocolate tart" class="section__shop-body__card-image">
+                        </div>
+                        
+                        <div class="section__shop-body__card-description">
+                            <p>
+                                Шоколад горький, шоколад молочный, сливки пастеризованые, мука пшеничная, сахар, молоко пастеризованное, крахмал кукурузный, порошок какао, ваниль стручковая, цветы незабудки китайской.
+                            </p>
+                        </div>
+                        <div class="section__shop-body__card-info">
+                            <h3 class="section__shop-body__card-heading">Очень шоколадный тарт</h3>
+                            <div class="section__shop-body__card-order">
+                                <p class="price">4000 руб.</p>
+                                <div class="order__social">
+                                    <span>Заказать: </span>
+                                    <a href="https://t.me/valerii_lindstrem"
+                                    target="_blank"><i class="ri-telegram-line"></i></a>
+                                    <a href="https://wa.me/79256626074"
+                                    target="_blank"><i class="ri-whatsapp-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__shop-body__card">
+                        <div class="section__shop-body__card-img">
+                            <img src="/img/sweets/frangipaneCherry.jpg" alt="Tarot with frangipane, cherry, and French meringue" class="section__shop-body__card-image">
+                        </div>
+                        
+                        <div class="section__shop-body__card-description">
+                            <p>
+                                Ягоды вишни, мука пшеничная, яйцо куриное, масло сливочное, мука миндальная, сахар, соль.
+                            </p>
+                        </div>
+                        <div class="section__shop-body__card-info">
+                            <h3 class="section__shop-body__card-heading">Тарт с франжипаном, вишней и французской меренгой</h3>
+                            <div class="section__shop-body__card-order">
+                                <p class="price">3500 руб.</p>
+                                <div class="order__social">
+                                    <span>Заказать: </span>
+                                    <a href="https://t.me/valerii_lindstrem"
+                                    target="_blank"><i class="ri-telegram-line"></i></a>
+                                    <a href="https://wa.me/79256626074"
+                                    target="_blank"><i class="ri-whatsapp-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__shop-body__card">
+                        <div class="section__shop-body__card-img">
+                            <img src="/img/sweets/frangipanePear .jpg" alt="Tart with frangipane and pear soaked in Riesling" class="section__shop-body__card-image">
+                        </div>
+                        
+                        <div class="section__shop-body__card-description">
+                            <p>
+                                Груша, мука пшеничная, яйцо куриное, масло сливочное, мука миндальная, вино рислинг, сахар, соль, цветы китайской незабудки.
+                            </p>
+                        </div>
+                        <div class="section__shop-body__card-info">
+                            <h3 class="section__shop-body__card-heading">Тарт с франжипаном и грушей вымоченной в рислинге</h3>
+                            <div class="section__shop-body__card-order">
+                                <p class="price">3500 руб.</p>
+                                <div class="order__social">
+                                    <span>Order: </span>
+                                    <a href="https://t.me/valerii_lindstrem"
+                                    target="_blank"><i class="ri-telegram-line"></i></a>
+                                    <a href="https://wa.me/79256626074"
+                                    target="_blank"><i class="ri-whatsapp-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__shop-body__card">
+                        <div class="section__shop-body__card-img">
+                            <img src="/img/sweets/JapaneseChocolateCheesecake.jpg" alt="Japanese chocolate cheesecake with blackcurrant cream" class="section__shop-body__card-image">
+                        </div>
+                        
+                        <div class="section__shop-body__card-description">
+                            <p>
+                                Ягоды черной смородины, яйцо куриное, молоко пастеризованное, сыр "сливочно-творожный", шоколад горький, сахар, мука пшеничная, масло сливочное, кукурузный крахмал, соль.
+                            </p>
+                        </div>
+                        <div class="section__shop-body__card-info">
+                            <h3 class="section__shop-body__card-heading">Японский шоколадный чизкейк с смородиновым кремом</h3>
+                            <div class="section__shop-body__card-order">
+                                <p class="price">4000 руб.</p>
+                                <div class="order__social">
+                                    <span>Заказать: </span>
+                                    <a href="https://t.me/valerii_lindstrem"
+                                    target="_blank"><i class="ri-telegram-line"></i></a>
+                                    <a href="https://wa.me/79256626074"
+                                    target="_blank"><i class="ri-whatsapp-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__shop-body__card">
+                        <div class="section__shop-body__card-img">
+                            <img src="/img/sweets/LemonDessert.jpg" alt="Lemon dessert" class="section__shop-body__card-image">
+                        </div>
+                        
+                        <div class="section__shop-body__card-description">
+                            <p>
+                                Сок лимона, яйцо куриное, масло сливочное, мука пшеничная, сахар, ваниль стручковая, желатин, соль, цветы китайской незабудки.
+                            </p>
+                        </div>
+                        <div class="section__shop-body__card-info">
+                            <h3 class="section__shop-body__card-heading">Лимонный десерт</h3>
+                            <div class="section__shop-body__card-order">
+                                <p class="price">3000 руб.</p>
+                                <div class="order__social">
+                                    <span>Заказать: </span>
+                                    <a href="https://t.me/valerii_lindstrem"
+                                    target="_blank"><i class="ri-telegram-line"></i></a>
+                                    <a href="https://wa.me/79256626074"
+                                    target="_blank"><i class="ri-whatsapp-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__shop-body__card">
+                        <div class="section__shop-body__card-img">
+                            <img src="/img/sweets/pieCoconutCream.jpg" alt="Spicy pie with coconut cream" class="section__shop-body__card-image">
+                        </div>
+                        
+                        <div class="section__shop-body__card-description">
+                            <p>
+                                Колосовый крем для готовки, масло сливочное, мука пшеничная, сахар, яйцо куриное, кардамон молотый, корица молотая, имбирь молотый, соль поваренная, цветы.
+                            </p>
+                        </div>
+                        <div class="section__shop-body__card-info">
+                            <h3 class="section__shop-body__card-heading">Пряный пирог с кокосовым кремом</h3>
+                            <div class="section__shop-body__card-order">
+                                <p class="price">3700 руб.</p>
+                                <div class="order__social">
+                                    <span>Заказать: </span>
+                                    <a href="https://t.me/valerii_lindstrem"
+                                    target="_blank"><i class="ri-telegram-line"></i></a>
+                                    <a href="https://wa.me/79256626074"
+                                    target="_blank"><i class="ri-whatsapp-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__shop-body__card">
+                        <div class="section__shop-body__card-img">
+                            <img src="/img/sweets/SweetCherryTart.jpeg" alt="Sweet cherry tart" class="section__shop-body__card-image">
+                        </div>
+                        
+                        <div class="section__shop-body__card-description">
+                            <p>
+                                Черешня, мука пшеничная, яйцо куриное, масло сливочное, сыр "сливочно-творожный", мука миндальная, ваниль стручковая, сахар, соль.
+                            </p>
+                        </div>
+                        <div class="section__shop-body__card-info">
+                            <h3 class="section__shop-body__card-heading">Черешневый тарт</h3>
+                            <div class="section__shop-body__card-order">
+                                <p class="price">4000 руб.</p>
+                                <div class="order__social">
+                                    <span>Заказать: </span>
+                                    <a href="https://t.me/valerii_lindstrem"
+                                    target="_blank"><i class="ri-telegram-line"></i></a>
+                                    <a href="https://wa.me/79256626074"
+                                    target="_blank"><i class="ri-whatsapp-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__shop-body__card">
+                        <div class="section__shop-body__card-img">
+                            <img src="/img/sweets/YogurtPie.jpg" alt="Yogurt pie with blackcurrant" class="section__shop-body__card-image">
+                        </div>
+                        
+                        <div class="section__shop-body__card-description">
+                            <p>
+                                Ягоды черники, йогурт, яйцо куриное, мука пшеничная, масло сливочное, сыр
+                                "сливочно-творожный", сахар, соль. 
+                            </p>
+                        </div>
+                        <div class="section__shop-body__card-info">
+                            <h3 class="section__shop-body__card-heading">Йогуртовый тарт с черникой</h3>
+                            <div class="section__shop-body__card-order">
+                                <p class="price">3800 руб.</p>
+                                <div class="order__social">
+                                    <span>Заказать: </span>
+                                    <a href="https://t.me/valerii_lindstrem"
+                                    target="_blank"><i class="ri-telegram-line"></i></a>
+                                    <a href="https://wa.me/79256626074"
+                                    target="_blank"><i class="ri-whatsapp-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Non-Sweets -->
+                <div class="section__shop-body__container section__shop-body__non-sweets active">
+                    <div class="section__shop-body__card">
+                        <div class="section__shop-body__card-img">
+                            <img src="/img/nonSweets/KishWithTomatoes .jpg" alt="Quiche with tomatoes and feta cheese" class="section__shop-body__card-image">
+                        </div>
+                        
+                        <div class="section__shop-body__card-description">
+                            <p>
+                                Мука пшеничная, масло сливочное, томаты черри, сыр фета, сливки, яйцо куриное, соль, цветы виолы желатин/агар агар.
+                            </p>
+                        </div>
+                        <div class="section__shop-body__card-info">
+                            <h3 class="section__shop-body__card-heading">Киш с томатами и сыром фета</h3>
+                            <div class="section__shop-body__card-order">
+                                <p class="price">3500 руб.</p>
+                                <div class="order__social">
+                                    <span>Заказать: </span>
+                                    <a href="https://t.me/valerii_lindstrem"
+                                    target="_blank"><i class="ri-telegram-line"></i></a>
+                                    <a href="https://wa.me/79256626074"
+                                    target="_blank"><i class="ri-whatsapp-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__shop-body__card">
+                        <div class="section__shop-body__card-img">
+                            <img src="/img/nonSweets/GoatCheeseGrape.jpg" alt="Goat cheese and grape pie" class="section__shop-body__card-image">
+                        </div>
+                        
+                        <div class="section__shop-body__card-description">
+                            <p>
+                                Мука пшеничная, масло сливочное, виноград, сыр козий, сыр пармезан, сливки, сметана, яйцо куриное, соль пищевая.
+                            </p>
+                        </div>
+                        <div class="section__shop-body__card-info">
+                            <h3 class="section__shop-body__card-heading">Пирог с козим сыром и виноградом</h3>
+                            <div class="section__shop-body__card-order">
+                                <p class="price">3500 руб.</p>
+                                <div class="order__social">
+                                    <span>Заказать: </span>
+                                    <a href="https://t.me/valerii_lindstrem"
+                                    target="_blank"><i class="ri-telegram-line"></i></a>
+                                    <a href="https://wa.me/79256626074"
+                                    target="_blank"><i class="ri-whatsapp-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__shop-body__card">
+                        <div class="section__shop-body__card-img">
+                            <img src="/img/nonSweets/QuicheBaconPumpkin.jpg" alt="Quiche with bacon and pumpkin" class="section__shop-body__card-image">
+                        </div>
+                        
+                        <div class="section__shop-body__card-description">
+                            <p>
+                                Мука пшеничная, масло сливочное, тыква, бекон, сливки, яйцо куриное, сыр фета, сыр рикотта, соль, корица.
+                            </p>
+                        </div>
+                        <div class="section__shop-body__card-info">
+                            <h3 class="section__shop-body__card-heading">Киш с беконом и тыквой</h3>
+                            <div class="section__shop-body__card-order">
+                                <p class="price">4000 руб.</p>
+                                <div class="order__social">
+                                    <span>Заказать: </span>
+                                    <a href="https://t.me/valerii_lindstrem"
+                                    target="_blank"><i class="ri-telegram-line"></i></a>
+                                    <a href="https://wa.me/79256626074"
+                                    target="_blank"><i class="ri-whatsapp-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cakes -->
+                <div class=" section__shop-body__container section__shop-body__cakes active">
+                    <h2 class="section__shop-body__cakes-heading">Торты</h2>
+                    <a href="/ru/cakes-ru.html" class="section__shop-body__cakes-link" ><i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="/js/online-shop.js"></script> 
+</body>
+</html>

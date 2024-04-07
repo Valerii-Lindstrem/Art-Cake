@@ -1,0 +1,32 @@
+@import "media";
+@import "mixins";
+
+:root{
+    //color
+    --color-background:rgb(247, 238, 223,1); 
+    --color-text:#282828;
+    --color-icon:rgb(72, 72, 72,1);
+    --color-hover:rgb(155,155,155,1);
+
+    //layout
+    --container-width: 1540px;
+    --container-padding-x: 20px;
+    --height-icon-link: 30px;
+    --main-padding-block:15px;
+    --main-padding-inline:5px;
+
+
+    //transition
+    --transition-duration: 0.4s;
+    --transition-opacity: all 0.9s cubic-bezier(.77,0,.18,1);
+    --transition-quick: all 0.3s cubic-bezier(.77,0,.18,1);
+
+    //fonts
+
+    --font-family:'Cormorant Infant', serif;
+
+    @include tablet-l {
+        --main-padding-block:8px;
+        --main-padding-inline:1px;
+    }
+}

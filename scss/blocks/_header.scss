@@ -1,0 +1,97 @@
+@import "../variables";
+@import "../mixins";
+@import "animation";
+
+.header{
+    position: fixed;
+    right: 0;
+    height: 100%;
+    width: fit-content;
+    z-index: 3;
+
+    &__container{
+        height: 100%;
+        padding-block: var(--main-padding-block);
+        padding-inline: var(--main-padding-inline);
+        
+        &-list{
+            
+            height: 100%;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            align-items: center;
+            row-gap: 20px;
+        }
+
+        &-item{
+            writing-mode: vertical-lr;
+            -webkit-writing-mode: vertical-lr;
+                -ms-writing-mode: tb-lr;
+            display: flex;
+            column-gap: 30px;
+        }
+        &-link{
+            &__title{
+                font-size: 19px;
+                letter-spacing: 0.15em;
+            }
+        }
+
+        &-button{
+            display: block;
+            height: 40px;
+            aspect-ratio: 1;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            column-gap: 5px;
+
+            .button-arrow{
+                width: 1px;
+                height: 80%;
+                background-color: var(--color-icon);
+                -webkit-animation: navigate_animation 4s cubic-bezier(0.45, 0.05, 0, 1) infinite;
+                animation: navigate_animation 4s cubic-bezier(0.45, 0.05, 0, 1) infinite;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                &:nth-of-type(1) {
+                    -webkit-animation-delay: 0.4s;
+                    animation-delay: 0.4s;
+                }
+                &:nth-of-type(2) {
+                    -webkit-animation-delay: 0.5s;
+                    animation-delay: 0.5s;
+                }
+                &:nth-of-type(3) {
+                    -webkit-animation-delay: 0.6s;
+                    animation-delay: 0.6s;
+                } 
+            }
+            &.open{
+                gap: 0;
+                .button-arrow {
+                    &:first-of-type {
+                        -webkit-transform: rotate(-15deg);
+                        -ms-transform: rotate(-15deg);
+                        transform: rotate(-15deg);
+                        -webkit-animation: navigate_close_1 4s cubic-bezier(0.45, 0.05, 0, 1) infinite;
+                        animation: navigate_close_1 4s cubic-bezier(0.45, 0.05, 0, 1) infinite;
+                    }
+                    &:last-of-type {
+                        -webkit-transform: rotate(15deg);
+                        -ms-transform: rotate(15deg);
+                        transform: rotate(15deg);
+                        -webkit-animation: navigate_close_2 4s cubic-bezier(0.45, 0.05, 0, 1) infinite;
+                        animation: navigate_close_2 4s cubic-bezier(0.45, 0.05, 0, 1) infinite;
+                    }
+                    &:nth-of-type(2) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+

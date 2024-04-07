@@ -1,0 +1,138 @@
+@import "../variables";
+
+@-webkit-keyframes navigate_animation {
+    0% {
+        background-color: gray;
+        top: 0;
+        height: 32px;
+    }
+    10% {
+        top: 0;
+        height: 32px;
+        background-color: black;
+    }
+    30% {
+        top: 32px;
+        height: 0;
+        background-color: black;
+    }
+    31% {
+        top: 0;
+        background-color: black;
+    }
+    50% {
+        top: 0;
+        height: 32px;
+        background-color: black;
+    }
+    100% {
+        top: 0;
+        height: 32px;
+        background-color: gray;
+    }
+}
+
+@keyframes navigate_animation {
+    0% {
+        background-color: gray;
+        top: 0;
+        height: 32px;
+    }
+    10% {
+        top: 0;
+        height: 32px;
+        background-color: black;
+    }
+    30% {
+        top: 32px;
+        height: 0;
+        background-color: black;
+    }
+    31% {
+        top: 0;
+        background-color: black;
+    }
+    50% {
+        top: 0;
+        height: 32px;
+        background-color: black;
+    }
+    100% {
+        top: 0;
+        height: 32px;
+        background-color: gray;
+    }
+}
+
+@-webkit-keyframes navigate_close_1 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        background-color: gray;
+    }
+    50% {
+        -webkit-transform: rotate(-25deg);
+        transform: rotate(-25deg);
+        background-color: black;
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        background-color: gray;
+    }
+}
+
+@keyframes navigate_close_1 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        background-color: gray;
+    }
+    50% {
+        -webkit-transform: rotate(-25deg);
+        transform: rotate(-25deg);
+        background-color: black;
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        background-color: gray;
+    }
+}
+
+@-webkit-keyframes navigate_close_2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        background-color: gray;
+    }
+    50% {
+        -webkit-transform: rotate(25deg);
+        transform: rotate(25deg);
+        background-color: black;
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        background-color: gray;
+    }
+}
+
+@keyframes navigate_close_2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        background-color: gray;
+    }
+    50% {
+        -webkit-transform: rotate(25deg);
+        transform: rotate(25deg);
+        background-color: black;
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        background-color: gray;
+    }
+}
+

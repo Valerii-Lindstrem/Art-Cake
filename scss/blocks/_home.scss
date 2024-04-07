@@ -1,0 +1,24 @@
+@import "../variables";
+@import "../mixins";
+
+.background__image{
+    position: absolute;
+    background-image: url("/img/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    -o-object-fit: cover;
+    object-fit: cover;
+    opacity: 0;
+    -webkit-transition: var(--transition-opacity);
+    -o-transition: var(--transition-opacity);
+    transition: var(--transition-opacity);
+    width: 100%;
+    height: 100%;
+
+     &.non-active{
+        opacity: 0 !important;
+    }
+    
+}

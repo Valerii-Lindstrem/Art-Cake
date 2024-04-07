@@ -1,0 +1,20 @@
+@use"normalize";
+@use"globals";
+@use"utils";
+@use"variables";
+@use"mixins";
+@use"media";
+
+@use"blocks/preloader";
+@use"blocks/header";
+@use"blocks/animation";
+@use"blocks/menu";
+@use"blocks/home";
+@use"blocks/about";
+@use"blocks/services";
+@use"blocks/online-shop";
+@use"blocks/cakes";
+
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300&display=swap')
